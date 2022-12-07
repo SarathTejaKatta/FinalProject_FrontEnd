@@ -1,0 +1,55 @@
+{"persons": [{
+  "id":1,
+  "name": "Elon Musk",
+  "fathername": "Errol musk",
+  "mothername":"Maye Musk",
+  "gender":"M",
+  "age":51,
+  "dob":"6/28/1971",
+  "country":"USA",
+  "networth":"$191.2 Billions"
+},
+{
+ "id":2,
+  "name": "Bernard Arnault",
+  "fathername": "Jean Arnault",
+  "mothername":"Marie-Josèphe Savinel",
+  "gender":"M",
+  "age":73,
+  "dob":"03/05/1949",
+  "country":"France",
+  "networth":"$179.8 Billions"
+},
+{
+ "id":3,
+  "name": "Gautam Adani",
+  "fathername": "Shantilal Adani",
+  "mothername":"Shantaben Adani",
+  "gender":"M",
+  "age":60,
+  "dob":"06/24/1962",
+  "country":"India",
+  "networth":"$134.6 Billions"
+},
+{
+  "id":4,
+  "name": "Jeff Bezos",
+  "fathername": "Ted Jorgensen",
+  "mothername":"Jacklyn Bezos",
+  "gender":"M",
+  "age":58,
+  "dob":"01/12/1964",
+  "country":"USA",
+  "networth":"$116.8 Billions"
+},
+{
+  "id":5,
+  "name": "Warren Buffet",
+  "fathername": "Howard Buffet",
+  "mothername":"Leila Buffet ",
+  "gender":"M",
+  "age":92,
+  "dob":"08/30/1930",
+  "country":"USA",
+  "networth":"$110.6 Billions"
+}]}

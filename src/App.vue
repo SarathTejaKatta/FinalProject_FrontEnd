@@ -1,26 +1,68 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+      <HeaderTop projectName="TOP 5 RICHEST PEOPLE IN THE WORLD" />
+      <RichestPersons :persons="persons" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+    import HeaderTop from './components/HeaderTop.vue'
+    import RichestPersons from './components/RichestPersons.vue'
+
+    export default {
+      name: 'App',
+      components: {    
+      HeaderTop,
+      RichestPersons
+    },
+
+    data(){
+      return {
+        persons: []
+      }
+    },
+
+    methods: {
+      async fetchPersons(){
+          const res = await fetch('https://nodes.herokuapp.com/api')
+          const data = await res.json()
+          console.log( data )
+          return data.persons
+      }
+    },
+    async created(){
+    this.persons = await this.fetchPersons()
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .container {
+        max-width: 720px;
+        margin: 30px auto;
+        overflow: auto;
+        min-height: 300px;
+        border: 0.3em solid black;
+        padding: 30px;
+        border-radius: 5px;
+        background-color:rgb(200, 248, 250);
+      }
+
+      div{
+        margin-bottom: 0.5em;
+      }
+
 </style>
