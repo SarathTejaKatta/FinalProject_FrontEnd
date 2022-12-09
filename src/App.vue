@@ -58,7 +58,7 @@
         border: 0.3em solid black;
         padding: 30px;
         border-radius: 5px;
-        background-color:rgb(200, 248, 250);
+        background-color:rgb(104, 245, 250);
       }
 
       div{

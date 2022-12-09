@@ -28,7 +28,7 @@
 <style scoped>
 
     .bookbox{
-        background-color:rgb(186, 229, 251);
+        background-color:rgb(75, 193, 252);
         padding: 1em;
         color: gray;
     }
