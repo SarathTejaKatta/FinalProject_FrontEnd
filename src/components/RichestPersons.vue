@@ -30,7 +30,7 @@
     .bookbox{
         background-color:rgb(75, 193, 252);
         padding: 1em;
-        color: gray;
+        color: rgb(134, 133, 133);
     }
 
 </style>

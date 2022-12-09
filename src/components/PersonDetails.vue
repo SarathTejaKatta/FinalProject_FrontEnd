@@ -34,7 +34,7 @@
         padding: 1em;
     }
     .red{
-        background-color: orangered !important;
+        background-color: rgb(255, 72, 6) !important;
     }
     .green{
         color: white;

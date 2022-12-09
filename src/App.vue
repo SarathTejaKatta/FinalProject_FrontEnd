@@ -55,7 +55,7 @@
         margin: 30px auto;
         overflow: auto;
         min-height: 300px;
-        border: 0.3em solid black;
+        border: 0.3em solid rgb(0, 0, 0);
         padding: 30px;
         border-radius: 5px;
         background-color:rgb(104, 245, 250);
